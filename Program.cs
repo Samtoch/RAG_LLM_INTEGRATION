@@ -1,7 +1,7 @@
 
-using SemanticSearch.Services;
+using RAG_LLM_INTEGRATION.Services;
 
-namespace SemanticSearch
+namespace RAG_LLM_INTEGRATION
 {
     public class Program
     {
@@ -17,6 +17,9 @@ namespace SemanticSearch
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddScoped<ISearchService, SearchService>();
+            builder.Services.AddScoped<IQdrantService, QdrantService>();
+            //builder.Services.AddScoped<IQdrantService, QdrantService>();
+
 
             var app = builder.Build();
 

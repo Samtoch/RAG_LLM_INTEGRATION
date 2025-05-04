@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "dlws8fRa2zA7izyySjlQUpYhpFGc8o5ZuJL1msDnzAo=",
-  "Source": "SemanticSearch",
-  "BasePath": "_content/SemanticSearch",
+  "Hash": "hYmILDHcyaCzVH101hBhQhXIjMSlw99JndT1+/AryQk=",
+  "Source": "RAG_LLM_INTEGRATION",
+  "BasePath": "_content/RAG_LLM_INTEGRATION",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

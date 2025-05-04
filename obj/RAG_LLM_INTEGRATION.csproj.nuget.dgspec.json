@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\c#Projects\\SemanticSearch\\SemanticSearch.csproj": {}
+    "C:\\c#Projects\\RAG_LLM_INTEGRATION\\RAG_LLM_INTEGRATION.csproj": {}
   },
   "projects": {
-    "C:\\c#Projects\\SemanticSearch\\SemanticSearch.csproj": {
+    "C:\\c#Projects\\RAG_LLM_INTEGRATION\\RAG_LLM_INTEGRATION.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\c#Projects\\SemanticSearch\\SemanticSearch.csproj",
-        "projectName": "SemanticSearch",
-        "projectPath": "C:\\c#Projects\\SemanticSearch\\SemanticSearch.csproj",
+        "projectUniqueName": "C:\\c#Projects\\RAG_LLM_INTEGRATION\\RAG_LLM_INTEGRATION.csproj",
+        "projectName": "RAG_LLM_INTEGRATION",
+        "projectPath": "C:\\c#Projects\\RAG_LLM_INTEGRATION\\RAG_LLM_INTEGRATION.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\c#Projects\\SemanticSearch\\obj\\",
+        "outputPath": "C:\\c#Projects\\RAG_LLM_INTEGRATION\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Qdrant.Client": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -73,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
