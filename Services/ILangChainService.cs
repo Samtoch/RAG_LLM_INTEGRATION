@@ -3,6 +3,6 @@
     public interface ILangChainService
     {
         Task<List<string>> GetChunkedDocument(IFormFile file);
-        Task<bool> ChunkDocument(IFormFile file);
+        Task<bool> ChunkDocumentAndCreateEmbeddings(IFormFile file, string collectionName);
     }
 }

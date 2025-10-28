@@ -1,0 +1,135 @@
+[
+  {
+    "ContainingType": "RAG_LLM_INTEGRATION.Controllers.DocumentsController",
+    "Method": "UploadEmbeddings",
+    "RelativePath": "api/Documents/CreateAndUploadCollection",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RAG_LLM_INTEGRATION.Model.EmbeddingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RAG_LLM_INTEGRATION.Controllers.DocumentsController",
+    "Method": "GetDocument",
+    "RelativePath": "api/Documents/GetChunks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RAG_LLM_INTEGRATION.Controllers.DocumentsController",
+    "Method": "UploadDocument",
+    "RelativePath": "api/Documents/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "collectionName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RAG_LLM_INTEGRATION.Controllers.SearchController",
+    "Method": "ChatDeepseek",
+    "RelativePath": "api/Search/chat/deepseek",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prompt",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RAG_LLM_INTEGRATION.Controllers.SearchController",
+    "Method": "ChatOpenAI",
+    "RelativePath": "api/Search/openai/chat",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prompt",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RAG_LLM_INTEGRATION.Controllers.SearchController",
+    "Method": "OpenAIEbeddings",
+    "RelativePath": "api/Search/openai/embeddings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputText",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RAG_LLM_INTEGRATION.Controllers.SearchController",
+    "Method": "GenerateAnswer",
+    "RelativePath": "api/Search/rag/answer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RAG_LLM_INTEGRATION.Model.SearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RAG_LLM_INTEGRATION.Controllers.SearchController",
+    "Method": "SearchSimilar",
+    "RelativePath": "api/Search/SemanticSearch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RAG_LLM_INTEGRATION.Model.SearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -8,6 +8,15 @@ using Microsoft.Extensions.Logging;
 using OpenAI.Embeddings;
 using Qdrant.Client;
 using RAG_LLM_INTEGRATION.Helpers;
+using Build5Nines.SharpVector;
+using Build5Nines.SharpVector.Data;
+using Microsoft.Extensions.AI;
+using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.Connectors.OpenAI;
+using Microsoft.Extensions.AI;
+using SemanticChunkerNET;
+using UglyToad.PdfPig;
+
 
 namespace RAG_LLM_INTEGRATION.Services
 {
@@ -34,6 +43,81 @@ namespace RAG_LLM_INTEGRATION.Services
 
         }
 
+        public async Task<List<string>> GetChunkedDocument_(IFormFile file)
+        {
+            try
+            {
+                string collectionName = "documents_collection";
+
+                // Save uploaded PDF to temp path
+                string tempPath = Path.GetTempFileName();
+                using (var stream = File.Create(tempPath))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                // Extract text from PDF
+                string fullText = ExtractTextFromPdf(tempPath);
+
+                // Setup Semantic Kernel
+                var builder = Kernel.CreateBuilder();
+
+#pragma warning disable SKEXP0010
+                builder.Services.AddOpenAIEmbeddingGenerator("text-embedding-ada-002", _openAIAPIKey);
+#pragma warning restore SKEXP0010
+
+                var kernel = builder.Build();
+
+                var embeddingGenerator = kernel.Services.GetRequiredService<IEmbeddingGenerator<string, Embedding<float>>>();
+
+                // Chunk the document
+                var chunker = new SemanticChunker(embeddingGenerator, tokenLimit: 512);
+                var chunks = await chunker.CreateChunksAsync(fullText);
+
+                // Convert chunks to list of entries
+                var entries = chunks.Select(c => c.Text).ToList();
+
+                // Store embeddings in Qdrant
+                var (success, message) = await _searchService.CreateEmbedingsForCollection(collectionName, entries);
+                if (!success)
+                {
+                    Console.WriteLine($"Embedding creation failed: {message}");
+                    return null;
+                }
+
+                return entries;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return null;
+            }
+        }
+
+        private string ExtractTextFromPdf(string path)
+        {
+            using var pdf = PdfDocument.Open(path);
+            var text = "";
+            foreach (var page in pdf.GetPages())
+            {
+                text += page.Text + "\n";
+            }
+            return text;
+        }
+
+        private List<string> SplitIntoSentences(string text)
+        {
+            var sentences = new List<string>();
+            var rawSentences = text.Split(new[] { '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+            foreach (var sentence in rawSentences)
+            {
+                var trimmed = sentence.Trim();
+                if (!string.IsNullOrWhiteSpace(trimmed))
+                    sentences.Add(trimmed + ".");
+            }
+            return sentences;
+        }
+
         public async Task<List<string>> GetChunkedDocument(IFormFile file)
         {
             try
@@ -47,18 +131,11 @@ namespace RAG_LLM_INTEGRATION.Services
                 var loader = new PdfDocumentLoader(tempPath);
                 List<Document> documents = await loader.LoadAsync();
 
-                var textSplitter = new TokenTextSplitter(
-                    chunkSize: 200,    // number of tokens per chunk
-                    chunkOverlap: 50   // overlap between chunks
-                );
+                // Split into chunks (~500 chars, 100 overlap)
+                var textSplitter = new RecursiveCharacterTextSplitter(chunkSize: 500, chunkOverlap: 100);
                 List<Document> chunks = textSplitter.SplitDocuments(documents).ToList();
 
-                //List<Document> chunks = new List<Document>();
-                //// Split into chunks (~500 chars, 100 overlap)
-                //var textSplitter = new RecursiveCharacterTextSplitter(chunkSize: 500, chunkOverlap: 100);
-                //List<Document> chunks = textSplitter.SplitDocuments(documents).ToList();
-
-                //
+                // 
                 List<string> chunkTexts = chunks.Select(c => c.PageContent).ToList();
 
                 return chunkTexts;
@@ -70,11 +147,11 @@ namespace RAG_LLM_INTEGRATION.Services
             }
         }
 
-        public async Task<bool> ChunkDocument(IFormFile file)
+        public async Task<bool> ChunkDocumentAndCreateEmbeddings(IFormFile file, string collectionName)
         {
             try
             {
-                string collectionName = "documents_collection";
+                //string collectionName = "documents_collection"; ChunkDocumentAndCreateEmbeddings
 
                 // 1. Load the PDF from the uploaded file
                 string tempPath = Path.GetTempFileName();
@@ -116,5 +193,6 @@ namespace RAG_LLM_INTEGRATION.Services
                 return false;
             }
         }
+
     }
 }

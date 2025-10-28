@@ -41,19 +41,7 @@ namespace RAG_LLM_INTEGRATION.Controllers
             return Ok(response);
         }
 
-        [HttpPost("CreateAndUploadCollection")]
-        public async Task<IActionResult> UploadEmbeddings([FromBody] EmbeddingRequest request)
-        {
-            if (string.IsNullOrWhiteSpace(request.CollectionName) || request.Entries == null || !request.Entries.Any())
-                return BadRequest("Collection name and entries are required.");
-
-            var (result, response) = await _searchService.CreateEmbedingsForCollection(request.CollectionName, request.Entries);
-
-            if (result)
-                return Ok("Embeddings uploaded successfully.");
-            else
-                return StatusCode(500, $"Something went wrong: {response}");
-        }
+        
 
         [HttpPost("SemanticSearch")]
         public async Task<IActionResult> SearchSimilar([FromBody] SearchRequest request)
@@ -75,16 +63,24 @@ namespace RAG_LLM_INTEGRATION.Controllers
         [HttpPost("rag/answer")]
         public async Task<IActionResult> GenerateAnswer([FromBody] SearchRequest request)
         {
-            string model = "all-minilm";
+            //string model = "all-minilm";
             //float[] questionEmbedding = await _searchService.GetOllamaEmbedding(request.InputText, model);
             float[] questionEmbedding = await _searchService.GetOpenAIEmbedding(request.InputText);
 
-            var searchResults = await _searchService.SearchTopMatches(request.CollectionName, questionEmbedding, topK: 1);
+            var searchResults = await _searchService.SearchTopMatches(request.CollectionName, questionEmbedding, topK: 2);
 
             // Combine all texts into a single context
             var context = string.Join("\n", searchResults.Select(r => r.Name));
 
-            string fullPrompt = $"Context:\n{context}\n\nQuestion: {request.InputText}\nAnswer:";
+            string promptHelper = @"You are a RAG system, working as a search tool at an NHS Organisation called Informatics Merseyside.
+            All responses should be made EXPLICITLY in this context and can be formatted in HTML. You are the first point of contact for the team and can escalate to a human advisor if needed. ALWAYS keep your responses short, clear, and concise.
+            NEVER say what you CANT do, ALWAYS focus on what you can do to help
+ 
+            ####
+            Guidelines:
+            If asked a question unrelated to the knowledge base, ALWAYS politely refuse if you do not have an answer from the context.";
+
+            string fullPrompt = $"Prompt Instruction: \n{promptHelper}\n\n Context:\n{context}\n\n Question: {request.InputText}\nAnswer:";
 
             //string answer = await _searchService.GetLlama3Answer(fullPrompt);
             string answer = await _searchService.GetOpenAIGpt4oMiniAnswer(fullPrompt);

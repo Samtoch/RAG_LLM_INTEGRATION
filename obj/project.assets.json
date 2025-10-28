@@ -35,44 +35,48 @@
           }
         }
       },
-      "Azure.AI.OpenAI/2.1.0": {
+      "Azure.AI.OpenAI/2.5.0-beta.1": {
         "type": "package",
         "dependencies": {
-          "Azure.Core": "1.44.1",
-          "OpenAI": "2.1.0"
+          "Azure.Core": "1.49.0",
+          "OpenAI": "2.5.0"
         },
         "compile": {
-          "lib/netstandard2.0/Azure.AI.OpenAI.dll": {
+          "lib/net8.0/Azure.AI.OpenAI.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Azure.AI.OpenAI.dll": {
+          "lib/net8.0/Azure.AI.OpenAI.dll": {
             "related": ".xml"
           }
         }
       },
-      "Azure.Core/1.44.1": {
+      "Azure.Core/1.49.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
-          "System.ClientModel": "1.1.0",
-          "System.Diagnostics.DiagnosticSource": "6.0.1",
-          "System.Memory.Data": "6.0.0",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Text.Encodings.Web": "6.0.0",
-          "System.Text.Json": "6.0.10",
-          "System.Threading.Tasks.Extensions": "4.5.4"
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
+          "System.ClientModel": "1.7.0",
+          "System.Memory.Data": "8.0.1"
         },
         "compile": {
-          "lib/net6.0/Azure.Core.dll": {
+          "lib/net8.0/Azure.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Azure.Core.dll": {
+          "lib/net8.0/Azure.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Build5Nines.SharpVector/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Build5Nines.SharpVector.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Build5Nines.SharpVector.dll": {}
         }
       },
       "CSharpToJsonSchema/3.10.1": {
@@ -206,6 +210,708 @@
         },
         "runtime": {
           "lib/net7.0/HuggingFace.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ICU4N/60.1.0-alpha.438": {
+        "type": "package",
+        "dependencies": {
+          "ICU4N.Resources": "[60.1.0-alpha.438]",
+          "J2N": "[2.1.0, 3.0.0)",
+          "Microsoft.Extensions.Caching.Memory": "6.0.2"
+        },
+        "compile": {
+          "lib/net8.0/ICU4N.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/ICU4N.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ICU4N.Resources/60.1.0-alpha.438": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ICU4N.resources.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ICU4N.resources.dll": {}
+        },
+        "resource": {
+          "lib/netstandard2.0/af/ICU4N.resources.dll": {
+            "locale": "af"
+          },
+          "lib/netstandard2.0/agq/ICU4N.resources.dll": {
+            "locale": "agq"
+          },
+          "lib/netstandard2.0/ak/ICU4N.resources.dll": {
+            "locale": "ak"
+          },
+          "lib/netstandard2.0/am/ICU4N.resources.dll": {
+            "locale": "am"
+          },
+          "lib/netstandard2.0/ar/ICU4N.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/netstandard2.0/ars/ICU4N.resources.dll": {
+            "locale": "ars"
+          },
+          "lib/netstandard2.0/as/ICU4N.resources.dll": {
+            "locale": "as"
+          },
+          "lib/netstandard2.0/asa/ICU4N.resources.dll": {
+            "locale": "asa"
+          },
+          "lib/netstandard2.0/ast/ICU4N.resources.dll": {
+            "locale": "ast"
+          },
+          "lib/netstandard2.0/az-Cyrl/ICU4N.resources.dll": {
+            "locale": "az-Cyrl"
+          },
+          "lib/netstandard2.0/az-Latn/ICU4N.resources.dll": {
+            "locale": "az-Latn"
+          },
+          "lib/netstandard2.0/az/ICU4N.resources.dll": {
+            "locale": "az"
+          },
+          "lib/netstandard2.0/bas/ICU4N.resources.dll": {
+            "locale": "bas"
+          },
+          "lib/netstandard2.0/be/ICU4N.resources.dll": {
+            "locale": "be"
+          },
+          "lib/netstandard2.0/bem/ICU4N.resources.dll": {
+            "locale": "bem"
+          },
+          "lib/netstandard2.0/bez/ICU4N.resources.dll": {
+            "locale": "bez"
+          },
+          "lib/netstandard2.0/bg/ICU4N.resources.dll": {
+            "locale": "bg"
+          },
+          "lib/netstandard2.0/bm/ICU4N.resources.dll": {
+            "locale": "bm"
+          },
+          "lib/netstandard2.0/bn/ICU4N.resources.dll": {
+            "locale": "bn"
+          },
+          "lib/netstandard2.0/bo/ICU4N.resources.dll": {
+            "locale": "bo"
+          },
+          "lib/netstandard2.0/br/ICU4N.resources.dll": {
+            "locale": "br"
+          },
+          "lib/netstandard2.0/brx/ICU4N.resources.dll": {
+            "locale": "brx"
+          },
+          "lib/netstandard2.0/bs-Cyrl/ICU4N.resources.dll": {
+            "locale": "bs-Cyrl"
+          },
+          "lib/netstandard2.0/bs-Latn/ICU4N.resources.dll": {
+            "locale": "bs-Latn"
+          },
+          "lib/netstandard2.0/bs/ICU4N.resources.dll": {
+            "locale": "bs"
+          },
+          "lib/netstandard2.0/ca/ICU4N.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/netstandard2.0/ccp/ICU4N.resources.dll": {
+            "locale": "ccp"
+          },
+          "lib/netstandard2.0/ce/ICU4N.resources.dll": {
+            "locale": "ce"
+          },
+          "lib/netstandard2.0/cgg/ICU4N.resources.dll": {
+            "locale": "cgg"
+          },
+          "lib/netstandard2.0/chr/ICU4N.resources.dll": {
+            "locale": "chr"
+          },
+          "lib/netstandard2.0/cs/ICU4N.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cy/ICU4N.resources.dll": {
+            "locale": "cy"
+          },
+          "lib/netstandard2.0/da/ICU4N.resources.dll": {
+            "locale": "da"
+          },
+          "lib/netstandard2.0/dav/ICU4N.resources.dll": {
+            "locale": "dav"
+          },
+          "lib/netstandard2.0/de/ICU4N.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/dje/ICU4N.resources.dll": {
+            "locale": "dje"
+          },
+          "lib/netstandard2.0/dsb/ICU4N.resources.dll": {
+            "locale": "dsb"
+          },
+          "lib/netstandard2.0/dua/ICU4N.resources.dll": {
+            "locale": "dua"
+          },
+          "lib/netstandard2.0/dyo/ICU4N.resources.dll": {
+            "locale": "dyo"
+          },
+          "lib/netstandard2.0/dz/ICU4N.resources.dll": {
+            "locale": "dz"
+          },
+          "lib/netstandard2.0/ebu/ICU4N.resources.dll": {
+            "locale": "ebu"
+          },
+          "lib/netstandard2.0/ee/ICU4N.resources.dll": {
+            "locale": "ee"
+          },
+          "lib/netstandard2.0/el/ICU4N.resources.dll": {
+            "locale": "el"
+          },
+          "lib/netstandard2.0/en/ICU4N.resources.dll": {
+            "locale": "en"
+          },
+          "lib/netstandard2.0/eo/ICU4N.resources.dll": {
+            "locale": "eo"
+          },
+          "lib/netstandard2.0/es/ICU4N.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/et/ICU4N.resources.dll": {
+            "locale": "et"
+          },
+          "lib/netstandard2.0/eu/ICU4N.resources.dll": {
+            "locale": "eu"
+          },
+          "lib/netstandard2.0/ewo/ICU4N.resources.dll": {
+            "locale": "ewo"
+          },
+          "lib/netstandard2.0/fa/ICU4N.resources.dll": {
+            "locale": "fa"
+          },
+          "lib/netstandard2.0/ff/ICU4N.resources.dll": {
+            "locale": "ff"
+          },
+          "lib/netstandard2.0/fi/ICU4N.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/netstandard2.0/fil/ICU4N.resources.dll": {
+            "locale": "fil"
+          },
+          "lib/netstandard2.0/fo/ICU4N.resources.dll": {
+            "locale": "fo"
+          },
+          "lib/netstandard2.0/fr/ICU4N.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fur/ICU4N.resources.dll": {
+            "locale": "fur"
+          },
+          "lib/netstandard2.0/fy/ICU4N.resources.dll": {
+            "locale": "fy"
+          },
+          "lib/netstandard2.0/ga/ICU4N.resources.dll": {
+            "locale": "ga"
+          },
+          "lib/netstandard2.0/gd/ICU4N.resources.dll": {
+            "locale": "gd"
+          },
+          "lib/netstandard2.0/gl/ICU4N.resources.dll": {
+            "locale": "gl"
+          },
+          "lib/netstandard2.0/gsw/ICU4N.resources.dll": {
+            "locale": "gsw"
+          },
+          "lib/netstandard2.0/gu/ICU4N.resources.dll": {
+            "locale": "gu"
+          },
+          "lib/netstandard2.0/guz/ICU4N.resources.dll": {
+            "locale": "guz"
+          },
+          "lib/netstandard2.0/gv/ICU4N.resources.dll": {
+            "locale": "gv"
+          },
+          "lib/netstandard2.0/ha/ICU4N.resources.dll": {
+            "locale": "ha"
+          },
+          "lib/netstandard2.0/haw/ICU4N.resources.dll": {
+            "locale": "haw"
+          },
+          "lib/netstandard2.0/he/ICU4N.resources.dll": {
+            "locale": "he"
+          },
+          "lib/netstandard2.0/hi/ICU4N.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/netstandard2.0/hr/ICU4N.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/netstandard2.0/hsb/ICU4N.resources.dll": {
+            "locale": "hsb"
+          },
+          "lib/netstandard2.0/hu/ICU4N.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/netstandard2.0/hy/ICU4N.resources.dll": {
+            "locale": "hy"
+          },
+          "lib/netstandard2.0/id/ICU4N.resources.dll": {
+            "locale": "id"
+          },
+          "lib/netstandard2.0/ig/ICU4N.resources.dll": {
+            "locale": "ig"
+          },
+          "lib/netstandard2.0/ii/ICU4N.resources.dll": {
+            "locale": "ii"
+          },
+          "lib/netstandard2.0/in/ICU4N.resources.dll": {
+            "locale": "in"
+          },
+          "lib/netstandard2.0/is/ICU4N.resources.dll": {
+            "locale": "is"
+          },
+          "lib/netstandard2.0/it/ICU4N.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/iw/ICU4N.resources.dll": {
+            "locale": "iw"
+          },
+          "lib/netstandard2.0/ja/ICU4N.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/jgo/ICU4N.resources.dll": {
+            "locale": "jgo"
+          },
+          "lib/netstandard2.0/jmc/ICU4N.resources.dll": {
+            "locale": "jmc"
+          },
+          "lib/netstandard2.0/ka/ICU4N.resources.dll": {
+            "locale": "ka"
+          },
+          "lib/netstandard2.0/kab/ICU4N.resources.dll": {
+            "locale": "kab"
+          },
+          "lib/netstandard2.0/kam/ICU4N.resources.dll": {
+            "locale": "kam"
+          },
+          "lib/netstandard2.0/kde/ICU4N.resources.dll": {
+            "locale": "kde"
+          },
+          "lib/netstandard2.0/kea/ICU4N.resources.dll": {
+            "locale": "kea"
+          },
+          "lib/netstandard2.0/khq/ICU4N.resources.dll": {
+            "locale": "khq"
+          },
+          "lib/netstandard2.0/ki/ICU4N.resources.dll": {
+            "locale": "ki"
+          },
+          "lib/netstandard2.0/kk/ICU4N.resources.dll": {
+            "locale": "kk"
+          },
+          "lib/netstandard2.0/kkj/ICU4N.resources.dll": {
+            "locale": "kkj"
+          },
+          "lib/netstandard2.0/kl/ICU4N.resources.dll": {
+            "locale": "kl"
+          },
+          "lib/netstandard2.0/kln/ICU4N.resources.dll": {
+            "locale": "kln"
+          },
+          "lib/netstandard2.0/km/ICU4N.resources.dll": {
+            "locale": "km"
+          },
+          "lib/netstandard2.0/kn/ICU4N.resources.dll": {
+            "locale": "kn"
+          },
+          "lib/netstandard2.0/ko/ICU4N.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/kok/ICU4N.resources.dll": {
+            "locale": "kok"
+          },
+          "lib/netstandard2.0/ks/ICU4N.resources.dll": {
+            "locale": "ks"
+          },
+          "lib/netstandard2.0/ksb/ICU4N.resources.dll": {
+            "locale": "ksb"
+          },
+          "lib/netstandard2.0/ksf/ICU4N.resources.dll": {
+            "locale": "ksf"
+          },
+          "lib/netstandard2.0/ksh/ICU4N.resources.dll": {
+            "locale": "ksh"
+          },
+          "lib/netstandard2.0/ku/ICU4N.resources.dll": {
+            "locale": "ku"
+          },
+          "lib/netstandard2.0/kw/ICU4N.resources.dll": {
+            "locale": "kw"
+          },
+          "lib/netstandard2.0/ky/ICU4N.resources.dll": {
+            "locale": "ky"
+          },
+          "lib/netstandard2.0/lag/ICU4N.resources.dll": {
+            "locale": "lag"
+          },
+          "lib/netstandard2.0/lb/ICU4N.resources.dll": {
+            "locale": "lb"
+          },
+          "lib/netstandard2.0/lg/ICU4N.resources.dll": {
+            "locale": "lg"
+          },
+          "lib/netstandard2.0/lkt/ICU4N.resources.dll": {
+            "locale": "lkt"
+          },
+          "lib/netstandard2.0/ln/ICU4N.resources.dll": {
+            "locale": "ln"
+          },
+          "lib/netstandard2.0/lo/ICU4N.resources.dll": {
+            "locale": "lo"
+          },
+          "lib/netstandard2.0/lrc/ICU4N.resources.dll": {
+            "locale": "lrc"
+          },
+          "lib/netstandard2.0/lt/ICU4N.resources.dll": {
+            "locale": "lt"
+          },
+          "lib/netstandard2.0/lu/ICU4N.resources.dll": {
+            "locale": "lu"
+          },
+          "lib/netstandard2.0/luo/ICU4N.resources.dll": {
+            "locale": "luo"
+          },
+          "lib/netstandard2.0/luy/ICU4N.resources.dll": {
+            "locale": "luy"
+          },
+          "lib/netstandard2.0/lv/ICU4N.resources.dll": {
+            "locale": "lv"
+          },
+          "lib/netstandard2.0/mas/ICU4N.resources.dll": {
+            "locale": "mas"
+          },
+          "lib/netstandard2.0/mer/ICU4N.resources.dll": {
+            "locale": "mer"
+          },
+          "lib/netstandard2.0/mfe/ICU4N.resources.dll": {
+            "locale": "mfe"
+          },
+          "lib/netstandard2.0/mg/ICU4N.resources.dll": {
+            "locale": "mg"
+          },
+          "lib/netstandard2.0/mgh/ICU4N.resources.dll": {
+            "locale": "mgh"
+          },
+          "lib/netstandard2.0/mgo/ICU4N.resources.dll": {
+            "locale": "mgo"
+          },
+          "lib/netstandard2.0/mk/ICU4N.resources.dll": {
+            "locale": "mk"
+          },
+          "lib/netstandard2.0/ml/ICU4N.resources.dll": {
+            "locale": "ml"
+          },
+          "lib/netstandard2.0/mn/ICU4N.resources.dll": {
+            "locale": "mn"
+          },
+          "lib/netstandard2.0/mo/ICU4N.resources.dll": {
+            "locale": "mo"
+          },
+          "lib/netstandard2.0/mr/ICU4N.resources.dll": {
+            "locale": "mr"
+          },
+          "lib/netstandard2.0/ms/ICU4N.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/netstandard2.0/mt/ICU4N.resources.dll": {
+            "locale": "mt"
+          },
+          "lib/netstandard2.0/mua/ICU4N.resources.dll": {
+            "locale": "mua"
+          },
+          "lib/netstandard2.0/my/ICU4N.resources.dll": {
+            "locale": "my"
+          },
+          "lib/netstandard2.0/mzn/ICU4N.resources.dll": {
+            "locale": "mzn"
+          },
+          "lib/netstandard2.0/naq/ICU4N.resources.dll": {
+            "locale": "naq"
+          },
+          "lib/netstandard2.0/nb/ICU4N.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/netstandard2.0/nd/ICU4N.resources.dll": {
+            "locale": "nd"
+          },
+          "lib/netstandard2.0/nds/ICU4N.resources.dll": {
+            "locale": "nds"
+          },
+          "lib/netstandard2.0/ne/ICU4N.resources.dll": {
+            "locale": "ne"
+          },
+          "lib/netstandard2.0/nl/ICU4N.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/netstandard2.0/nmg/ICU4N.resources.dll": {
+            "locale": "nmg"
+          },
+          "lib/netstandard2.0/nn/ICU4N.resources.dll": {
+            "locale": "nn"
+          },
+          "lib/netstandard2.0/nnh/ICU4N.resources.dll": {
+            "locale": "nnh"
+          },
+          "lib/netstandard2.0/no/ICU4N.resources.dll": {
+            "locale": "no"
+          },
+          "lib/netstandard2.0/nus/ICU4N.resources.dll": {
+            "locale": "nus"
+          },
+          "lib/netstandard2.0/nyn/ICU4N.resources.dll": {
+            "locale": "nyn"
+          },
+          "lib/netstandard2.0/om/ICU4N.resources.dll": {
+            "locale": "om"
+          },
+          "lib/netstandard2.0/or/ICU4N.resources.dll": {
+            "locale": "or"
+          },
+          "lib/netstandard2.0/os/ICU4N.resources.dll": {
+            "locale": "os"
+          },
+          "lib/netstandard2.0/pa-Arab/ICU4N.resources.dll": {
+            "locale": "pa-Arab"
+          },
+          "lib/netstandard2.0/pa-Guru/ICU4N.resources.dll": {
+            "locale": "pa-Guru"
+          },
+          "lib/netstandard2.0/pa/ICU4N.resources.dll": {
+            "locale": "pa"
+          },
+          "lib/netstandard2.0/pl/ICU4N.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/ps/ICU4N.resources.dll": {
+            "locale": "ps"
+          },
+          "lib/netstandard2.0/pt/ICU4N.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/netstandard2.0/quz/ICU4N.resources.dll": {
+            "locale": "quz"
+          },
+          "lib/netstandard2.0/rm/ICU4N.resources.dll": {
+            "locale": "rm"
+          },
+          "lib/netstandard2.0/rn/ICU4N.resources.dll": {
+            "locale": "rn"
+          },
+          "lib/netstandard2.0/ro/ICU4N.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/netstandard2.0/rof/ICU4N.resources.dll": {
+            "locale": "rof"
+          },
+          "lib/netstandard2.0/ru/ICU4N.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/rw/ICU4N.resources.dll": {
+            "locale": "rw"
+          },
+          "lib/netstandard2.0/rwk/ICU4N.resources.dll": {
+            "locale": "rwk"
+          },
+          "lib/netstandard2.0/sah/ICU4N.resources.dll": {
+            "locale": "sah"
+          },
+          "lib/netstandard2.0/saq/ICU4N.resources.dll": {
+            "locale": "saq"
+          },
+          "lib/netstandard2.0/sbp/ICU4N.resources.dll": {
+            "locale": "sbp"
+          },
+          "lib/netstandard2.0/se/ICU4N.resources.dll": {
+            "locale": "se"
+          },
+          "lib/netstandard2.0/seh/ICU4N.resources.dll": {
+            "locale": "seh"
+          },
+          "lib/netstandard2.0/ses/ICU4N.resources.dll": {
+            "locale": "ses"
+          },
+          "lib/netstandard2.0/sg/ICU4N.resources.dll": {
+            "locale": "sg"
+          },
+          "lib/netstandard2.0/sh/ICU4N.resources.dll": {
+            "locale": "sh"
+          },
+          "lib/netstandard2.0/shi-Latn/ICU4N.resources.dll": {
+            "locale": "shi-Latn"
+          },
+          "lib/netstandard2.0/shi-Tfng/ICU4N.resources.dll": {
+            "locale": "shi-Tfng"
+          },
+          "lib/netstandard2.0/shi/ICU4N.resources.dll": {
+            "locale": "shi"
+          },
+          "lib/netstandard2.0/si/ICU4N.resources.dll": {
+            "locale": "si"
+          },
+          "lib/netstandard2.0/sk/ICU4N.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/netstandard2.0/sl/ICU4N.resources.dll": {
+            "locale": "sl"
+          },
+          "lib/netstandard2.0/smn/ICU4N.resources.dll": {
+            "locale": "smn"
+          },
+          "lib/netstandard2.0/sn/ICU4N.resources.dll": {
+            "locale": "sn"
+          },
+          "lib/netstandard2.0/so/ICU4N.resources.dll": {
+            "locale": "so"
+          },
+          "lib/netstandard2.0/sq/ICU4N.resources.dll": {
+            "locale": "sq"
+          },
+          "lib/netstandard2.0/sr-Cyrl/ICU4N.resources.dll": {
+            "locale": "sr-Cyrl"
+          },
+          "lib/netstandard2.0/sr-Latn/ICU4N.resources.dll": {
+            "locale": "sr-Latn"
+          },
+          "lib/netstandard2.0/sr/ICU4N.resources.dll": {
+            "locale": "sr"
+          },
+          "lib/netstandard2.0/sv/ICU4N.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/netstandard2.0/sw/ICU4N.resources.dll": {
+            "locale": "sw"
+          },
+          "lib/netstandard2.0/ta/ICU4N.resources.dll": {
+            "locale": "ta"
+          },
+          "lib/netstandard2.0/te/ICU4N.resources.dll": {
+            "locale": "te"
+          },
+          "lib/netstandard2.0/teo/ICU4N.resources.dll": {
+            "locale": "teo"
+          },
+          "lib/netstandard2.0/tg/ICU4N.resources.dll": {
+            "locale": "tg"
+          },
+          "lib/netstandard2.0/th/ICU4N.resources.dll": {
+            "locale": "th"
+          },
+          "lib/netstandard2.0/ti/ICU4N.resources.dll": {
+            "locale": "ti"
+          },
+          "lib/netstandard2.0/tl/ICU4N.resources.dll": {
+            "locale": "tl"
+          },
+          "lib/netstandard2.0/to/ICU4N.resources.dll": {
+            "locale": "to"
+          },
+          "lib/netstandard2.0/tr/ICU4N.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tt/ICU4N.resources.dll": {
+            "locale": "tt"
+          },
+          "lib/netstandard2.0/twq/ICU4N.resources.dll": {
+            "locale": "twq"
+          },
+          "lib/netstandard2.0/tzm/ICU4N.resources.dll": {
+            "locale": "tzm"
+          },
+          "lib/netstandard2.0/ug/ICU4N.resources.dll": {
+            "locale": "ug"
+          },
+          "lib/netstandard2.0/uk/ICU4N.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/netstandard2.0/ur/ICU4N.resources.dll": {
+            "locale": "ur"
+          },
+          "lib/netstandard2.0/uz-Arab/ICU4N.resources.dll": {
+            "locale": "uz-Arab"
+          },
+          "lib/netstandard2.0/uz-Cyrl/ICU4N.resources.dll": {
+            "locale": "uz-Cyrl"
+          },
+          "lib/netstandard2.0/uz-Latn/ICU4N.resources.dll": {
+            "locale": "uz-Latn"
+          },
+          "lib/netstandard2.0/uz/ICU4N.resources.dll": {
+            "locale": "uz"
+          },
+          "lib/netstandard2.0/vai-Latn/ICU4N.resources.dll": {
+            "locale": "vai-Latn"
+          },
+          "lib/netstandard2.0/vai-Vaii/ICU4N.resources.dll": {
+            "locale": "vai-Vaii"
+          },
+          "lib/netstandard2.0/vai/ICU4N.resources.dll": {
+            "locale": "vai"
+          },
+          "lib/netstandard2.0/vi/ICU4N.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/netstandard2.0/vun/ICU4N.resources.dll": {
+            "locale": "vun"
+          },
+          "lib/netstandard2.0/wae/ICU4N.resources.dll": {
+            "locale": "wae"
+          },
+          "lib/netstandard2.0/wo/ICU4N.resources.dll": {
+            "locale": "wo"
+          },
+          "lib/netstandard2.0/xog/ICU4N.resources.dll": {
+            "locale": "xog"
+          },
+          "lib/netstandard2.0/yav/ICU4N.resources.dll": {
+            "locale": "yav"
+          },
+          "lib/netstandard2.0/yi/ICU4N.resources.dll": {
+            "locale": "yi"
+          },
+          "lib/netstandard2.0/yo/ICU4N.resources.dll": {
+            "locale": "yo"
+          },
+          "lib/netstandard2.0/zgh/ICU4N.resources.dll": {
+            "locale": "zgh"
+          },
+          "lib/netstandard2.0/zh-Hans/ICU4N.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/ICU4N.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh/ICU4N.resources.dll": {
+            "locale": "zh"
+          },
+          "lib/netstandard2.0/zu/ICU4N.resources.dll": {
+            "locale": "zu"
+          }
+        },
+        "build": {
+          "buildTransitive/ICU4N.Resources.targets": {}
+        }
+      },
+      "J2N/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/J2N.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/J2N.dll": {
             "related": ".xml"
           }
         }
@@ -545,7 +1251,26 @@
           }
         }
       },
-      "Microsoft.Extensions.AI.Abstractions/9.4.3-preview.1.25230.7": {
+      "Microsoft.Extensions.AI/9.9.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.AI.Abstractions": "9.9.1",
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.AI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.AI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.AI.Abstractions/9.9.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.AI.Abstractions.dll": {
@@ -554,6 +1279,23 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.AI.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.AI.OpenAI/9.9.1-preview.1.25474.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.AI.Abstractions": "9.9.1",
+          "OpenAI": "2.5.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.AI.OpenAI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.AI.OpenAI.dll": {
             "related": ".xml"
           }
         }
@@ -567,6 +1309,45 @@
         "buildMultiTargeting": {
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props": {},
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.4",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/9.0.4": {
@@ -1174,10 +1955,10 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.VectorData.Abstractions/9.0.0-preview.1.25229.1": {
+      "Microsoft.Extensions.VectorData.Abstractions/9.7.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.AI.Abstractions": "9.4.0-preview.1.25207.5"
+          "Microsoft.Extensions.AI.Abstractions": "9.5.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.Extensions.VectorData.Abstractions.dll": {
@@ -1346,17 +2127,29 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Abstractions/1.49.0": {
+      "Microsoft.SemanticKernel/1.66.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
+          "Microsoft.SemanticKernel.Connectors.AzureOpenAI": "1.66.0",
+          "Microsoft.SemanticKernel.Core": "1.66.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.SemanticKernel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.SemanticKernel.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Abstractions/1.66.0": {
+        "type": "package",
+        "dependencies": {
           "Microsoft.Bcl.HashCode": "1.1.1",
-          "Microsoft.Extensions.AI.Abstractions": "9.4.3-preview.1.25230.7",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
-          "Microsoft.Extensions.VectorData.Abstractions": "9.0.0-preview.1.25229.1",
-          "System.Diagnostics.DiagnosticSource": "8.0.1",
-          "System.Text.Json": "8.0.5"
+          "Microsoft.Extensions.AI": "9.9.1",
+          "Microsoft.Extensions.VectorData.Abstractions": "9.7.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.SemanticKernel.Abstractions.dll": {
@@ -1369,11 +2162,30 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Connectors.OpenAI/1.49.0": {
+      "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.66.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.SemanticKernel.Core": "1.49.0",
-          "OpenAI": "[2.2.0-beta.4]"
+          "Azure.AI.OpenAI": "2.5.0-beta.1",
+          "Microsoft.SemanticKernel.Connectors.OpenAI": "1.66.0",
+          "Microsoft.SemanticKernel.Core": "1.66.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.SemanticKernel.Connectors.OpenAI/1.66.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.AI.OpenAI": "9.9.1-preview.1.25474.6",
+          "Microsoft.SemanticKernel.Core": "1.66.0",
+          "OpenAI": "2.5.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.SemanticKernel.Connectors.OpenAI.dll": {
@@ -1386,13 +2198,12 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Core/1.49.0": {
+      "Microsoft.SemanticKernel.Core/1.66.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
-          "Microsoft.SemanticKernel.Abstractions": "1.49.0",
-          "System.Numerics.Tensors": "9.0.0",
-          "System.Text.Json": "8.0.5"
+          "Microsoft.SemanticKernel.Abstractions": "1.66.0",
+          "System.Numerics.Tensors": "9.0.8"
         },
         "compile": {
           "lib/net8.0/Microsoft.SemanticKernel.Core.dll": {
@@ -1675,6 +2486,19 @@
           }
         }
       },
+      "SemanticChunker.NET/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "ICU4N": "60.1.0-alpha.438",
+          "Microsoft.Extensions.AI.Abstractions": "9.7.1"
+        },
+        "compile": {
+          "lib/net8.0/SemanticChunkerNET.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SemanticChunkerNET.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.6.2": {
         "type": "package",
         "dependencies": {
@@ -1738,7 +2562,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "System.ClientModel/1.6.1": {
+      "System.ClientModel/1.7.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
@@ -2099,7 +2923,7 @@
           }
         }
       },
-      "System.Numerics.Tensors/9.0.4": {
+      "System.Numerics.Tensors/9.0.8": {
         "type": "package",
         "compile": {
           "lib/net8.0/System.Numerics.Tensors.dll": {
@@ -2113,15 +2937,6 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.Numerics.Vectors/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Reflection/4.3.0": {
@@ -2540,15 +3355,6 @@
           }
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.4": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
-        }
-      },
       "Tiktoken/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2689,42 +3495,58 @@
         "nuget_icon.png"
       ]
     },
-    "Azure.AI.OpenAI/2.1.0": {
-      "sha512": "doixr3tcsIcdzbzF9NxKt+6U0NKj6aPeOCPYONPsWjyf3gxVndVJAdjPcVdqeR/3vcRHXRgGnGlv+iXx5jMA4g==",
+    "Azure.AI.OpenAI/2.5.0-beta.1": {
+      "sha512": "ev1tmEhFVCc/JcOhxaysTALZ+hmuLP4ihWanUgwc3kaCQ6reyZ9RAALzBrolYHsln0M4104AHFnSKaIS10qinA==",
       "type": "package",
-      "path": "azure.ai.openai/2.1.0",
+      "path": "azure.ai.openai/2.5.0-beta.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.ai.openai.2.1.0.nupkg.sha512",
+        "azure.ai.openai.2.5.0-beta.1.nupkg.sha512",
         "azure.ai.openai.nuspec",
         "azureicon.png",
+        "lib/net8.0/Azure.AI.OpenAI.dll",
+        "lib/net8.0/Azure.AI.OpenAI.xml",
         "lib/netstandard2.0/Azure.AI.OpenAI.dll",
         "lib/netstandard2.0/Azure.AI.OpenAI.xml"
       ]
     },
-    "Azure.Core/1.44.1": {
-      "sha512": "YyznXLQZCregzHvioip07/BkzjuWNXogJEVz9T5W6TwjNr17ax41YGzYMptlo2G10oLCuVPoyva62y0SIRDixg==",
+    "Azure.Core/1.49.0": {
+      "sha512": "wmY5VEEVTBJN+8KVB6qSVZYDCMpHs1UXooOijx/NH7OsMtK92NlxhPBpPyh4cR+07R/zyDGvA5+Fss4TpwlO+g==",
       "type": "package",
-      "path": "azure.core/1.44.1",
+      "path": "azure.core/1.49.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.core.1.44.1.nupkg.sha512",
+        "azure.core.1.49.0.nupkg.sha512",
         "azure.core.nuspec",
         "azureicon.png",
-        "lib/net461/Azure.Core.dll",
-        "lib/net461/Azure.Core.xml",
+        "lib/net462/Azure.Core.dll",
+        "lib/net462/Azure.Core.xml",
         "lib/net472/Azure.Core.dll",
         "lib/net472/Azure.Core.xml",
-        "lib/net6.0/Azure.Core.dll",
-        "lib/net6.0/Azure.Core.xml",
+        "lib/net8.0/Azure.Core.dll",
+        "lib/net8.0/Azure.Core.xml",
         "lib/netstandard2.0/Azure.Core.dll",
         "lib/netstandard2.0/Azure.Core.xml"
+      ]
+    },
+    "Build5Nines.SharpVector/2.1.1": {
+      "sha512": "ynQB+rXbSwZvM2tNrsK+4Ui0D9TCExbjucUIgi771K0qozhLAYC018Uwm9lZU4scWjN2YGGDNXGzQGyAqeM0FA==",
+      "type": "package",
+      "path": "build5nines.sharpvector/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "build5nines.sharpvector.2.1.1.nupkg.sha512",
+        "build5nines.sharpvector.nuspec",
+        "lib/net8.0/Build5Nines.SharpVector.dll"
       ]
     },
     "CSharpToJsonSchema/3.10.1": {
@@ -2955,6 +3777,296 @@
         "lib/netstandard2.0/HuggingFace.dll",
         "lib/netstandard2.0/HuggingFace.xml",
         "nuget_icon.png"
+      ]
+    },
+    "ICU4N/60.1.0-alpha.438": {
+      "sha512": "UAk2pu6dXixs9PIdzjJ1Rhc58U1sEcDKCNYmvmdGvfQnlzd9etF3WWxhj+5/r2CFzqsjxrmWh+Rgk1/XzykRgQ==",
+      "type": "package",
+      "path": "icu4n/60.1.0-alpha.438",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "icu4n.60.1.0-alpha.438.nupkg.sha512",
+        "icu4n.nuspec",
+        "lib/net40/ICU4N.dll",
+        "lib/net40/ICU4N.xml",
+        "lib/net451/ICU4N.dll",
+        "lib/net451/ICU4N.xml",
+        "lib/net462/ICU4N.dll",
+        "lib/net462/ICU4N.xml",
+        "lib/net8.0/ICU4N.dll",
+        "lib/net8.0/ICU4N.xml",
+        "lib/net9.0/ICU4N.dll",
+        "lib/net9.0/ICU4N.xml",
+        "lib/netstandard2.0/ICU4N.dll",
+        "lib/netstandard2.0/ICU4N.xml",
+        "readme.md",
+        "unicode-icon-128x128.jpg"
+      ]
+    },
+    "ICU4N.Resources/60.1.0-alpha.438": {
+      "sha512": "hGGlQcK28KTdoZUszlAa4XFabNuFHqPupx/bVYH/uDqmDi1gimuW6oHg18hWARqISQYA2R16URMzc9ZZAOECGg==",
+      "type": "package",
+      "path": "icu4n.resources/60.1.0-alpha.438",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "buildTransitive/ICU4N.Resources.NuGetVersionWarning.targets",
+        "buildTransitive/ICU4N.Resources.targets",
+        "icu4n.resources.60.1.0-alpha.438.nupkg.sha512",
+        "icu4n.resources.nuspec",
+        "lib/netstandard2.0/ICU4N.resources.dll",
+        "lib/netstandard2.0/af/ICU4N.resources.dll",
+        "lib/netstandard2.0/agq/ICU4N.resources.dll",
+        "lib/netstandard2.0/ak/ICU4N.resources.dll",
+        "lib/netstandard2.0/am/ICU4N.resources.dll",
+        "lib/netstandard2.0/ar/ICU4N.resources.dll",
+        "lib/netstandard2.0/ars/ICU4N.resources.dll",
+        "lib/netstandard2.0/as/ICU4N.resources.dll",
+        "lib/netstandard2.0/asa/ICU4N.resources.dll",
+        "lib/netstandard2.0/ast/ICU4N.resources.dll",
+        "lib/netstandard2.0/az-Cyrl/ICU4N.resources.dll",
+        "lib/netstandard2.0/az-Latn/ICU4N.resources.dll",
+        "lib/netstandard2.0/az/ICU4N.resources.dll",
+        "lib/netstandard2.0/bas/ICU4N.resources.dll",
+        "lib/netstandard2.0/be/ICU4N.resources.dll",
+        "lib/netstandard2.0/bem/ICU4N.resources.dll",
+        "lib/netstandard2.0/bez/ICU4N.resources.dll",
+        "lib/netstandard2.0/bg/ICU4N.resources.dll",
+        "lib/netstandard2.0/bm/ICU4N.resources.dll",
+        "lib/netstandard2.0/bn/ICU4N.resources.dll",
+        "lib/netstandard2.0/bo/ICU4N.resources.dll",
+        "lib/netstandard2.0/br/ICU4N.resources.dll",
+        "lib/netstandard2.0/brx/ICU4N.resources.dll",
+        "lib/netstandard2.0/bs-Cyrl/ICU4N.resources.dll",
+        "lib/netstandard2.0/bs-Latn/ICU4N.resources.dll",
+        "lib/netstandard2.0/bs/ICU4N.resources.dll",
+        "lib/netstandard2.0/ca/ICU4N.resources.dll",
+        "lib/netstandard2.0/ccp/ICU4N.resources.dll",
+        "lib/netstandard2.0/ce/ICU4N.resources.dll",
+        "lib/netstandard2.0/cgg/ICU4N.resources.dll",
+        "lib/netstandard2.0/chr/ICU4N.resources.dll",
+        "lib/netstandard2.0/cs/ICU4N.resources.dll",
+        "lib/netstandard2.0/cy/ICU4N.resources.dll",
+        "lib/netstandard2.0/da/ICU4N.resources.dll",
+        "lib/netstandard2.0/dav/ICU4N.resources.dll",
+        "lib/netstandard2.0/de/ICU4N.resources.dll",
+        "lib/netstandard2.0/dje/ICU4N.resources.dll",
+        "lib/netstandard2.0/dsb/ICU4N.resources.dll",
+        "lib/netstandard2.0/dua/ICU4N.resources.dll",
+        "lib/netstandard2.0/dyo/ICU4N.resources.dll",
+        "lib/netstandard2.0/dz/ICU4N.resources.dll",
+        "lib/netstandard2.0/ebu/ICU4N.resources.dll",
+        "lib/netstandard2.0/ee/ICU4N.resources.dll",
+        "lib/netstandard2.0/el/ICU4N.resources.dll",
+        "lib/netstandard2.0/en/ICU4N.resources.dll",
+        "lib/netstandard2.0/eo/ICU4N.resources.dll",
+        "lib/netstandard2.0/es/ICU4N.resources.dll",
+        "lib/netstandard2.0/et/ICU4N.resources.dll",
+        "lib/netstandard2.0/eu/ICU4N.resources.dll",
+        "lib/netstandard2.0/ewo/ICU4N.resources.dll",
+        "lib/netstandard2.0/fa/ICU4N.resources.dll",
+        "lib/netstandard2.0/ff/ICU4N.resources.dll",
+        "lib/netstandard2.0/fi/ICU4N.resources.dll",
+        "lib/netstandard2.0/fil/ICU4N.resources.dll",
+        "lib/netstandard2.0/fo/ICU4N.resources.dll",
+        "lib/netstandard2.0/fr/ICU4N.resources.dll",
+        "lib/netstandard2.0/fur/ICU4N.resources.dll",
+        "lib/netstandard2.0/fy/ICU4N.resources.dll",
+        "lib/netstandard2.0/ga/ICU4N.resources.dll",
+        "lib/netstandard2.0/gd/ICU4N.resources.dll",
+        "lib/netstandard2.0/gl/ICU4N.resources.dll",
+        "lib/netstandard2.0/gsw/ICU4N.resources.dll",
+        "lib/netstandard2.0/gu/ICU4N.resources.dll",
+        "lib/netstandard2.0/guz/ICU4N.resources.dll",
+        "lib/netstandard2.0/gv/ICU4N.resources.dll",
+        "lib/netstandard2.0/ha/ICU4N.resources.dll",
+        "lib/netstandard2.0/haw/ICU4N.resources.dll",
+        "lib/netstandard2.0/he/ICU4N.resources.dll",
+        "lib/netstandard2.0/hi/ICU4N.resources.dll",
+        "lib/netstandard2.0/hr/ICU4N.resources.dll",
+        "lib/netstandard2.0/hsb/ICU4N.resources.dll",
+        "lib/netstandard2.0/hu/ICU4N.resources.dll",
+        "lib/netstandard2.0/hy/ICU4N.resources.dll",
+        "lib/netstandard2.0/id/ICU4N.resources.dll",
+        "lib/netstandard2.0/ig/ICU4N.resources.dll",
+        "lib/netstandard2.0/ii/ICU4N.resources.dll",
+        "lib/netstandard2.0/in/ICU4N.resources.dll",
+        "lib/netstandard2.0/is/ICU4N.resources.dll",
+        "lib/netstandard2.0/it/ICU4N.resources.dll",
+        "lib/netstandard2.0/iw/ICU4N.resources.dll",
+        "lib/netstandard2.0/ja/ICU4N.resources.dll",
+        "lib/netstandard2.0/jgo/ICU4N.resources.dll",
+        "lib/netstandard2.0/jmc/ICU4N.resources.dll",
+        "lib/netstandard2.0/ka/ICU4N.resources.dll",
+        "lib/netstandard2.0/kab/ICU4N.resources.dll",
+        "lib/netstandard2.0/kam/ICU4N.resources.dll",
+        "lib/netstandard2.0/kde/ICU4N.resources.dll",
+        "lib/netstandard2.0/kea/ICU4N.resources.dll",
+        "lib/netstandard2.0/khq/ICU4N.resources.dll",
+        "lib/netstandard2.0/ki/ICU4N.resources.dll",
+        "lib/netstandard2.0/kk/ICU4N.resources.dll",
+        "lib/netstandard2.0/kkj/ICU4N.resources.dll",
+        "lib/netstandard2.0/kl/ICU4N.resources.dll",
+        "lib/netstandard2.0/kln/ICU4N.resources.dll",
+        "lib/netstandard2.0/km/ICU4N.resources.dll",
+        "lib/netstandard2.0/kn/ICU4N.resources.dll",
+        "lib/netstandard2.0/ko/ICU4N.resources.dll",
+        "lib/netstandard2.0/kok/ICU4N.resources.dll",
+        "lib/netstandard2.0/ks/ICU4N.resources.dll",
+        "lib/netstandard2.0/ksb/ICU4N.resources.dll",
+        "lib/netstandard2.0/ksf/ICU4N.resources.dll",
+        "lib/netstandard2.0/ksh/ICU4N.resources.dll",
+        "lib/netstandard2.0/ku/ICU4N.resources.dll",
+        "lib/netstandard2.0/kw/ICU4N.resources.dll",
+        "lib/netstandard2.0/ky/ICU4N.resources.dll",
+        "lib/netstandard2.0/lag/ICU4N.resources.dll",
+        "lib/netstandard2.0/lb/ICU4N.resources.dll",
+        "lib/netstandard2.0/lg/ICU4N.resources.dll",
+        "lib/netstandard2.0/lkt/ICU4N.resources.dll",
+        "lib/netstandard2.0/ln/ICU4N.resources.dll",
+        "lib/netstandard2.0/lo/ICU4N.resources.dll",
+        "lib/netstandard2.0/lrc/ICU4N.resources.dll",
+        "lib/netstandard2.0/lt/ICU4N.resources.dll",
+        "lib/netstandard2.0/lu/ICU4N.resources.dll",
+        "lib/netstandard2.0/luo/ICU4N.resources.dll",
+        "lib/netstandard2.0/luy/ICU4N.resources.dll",
+        "lib/netstandard2.0/lv/ICU4N.resources.dll",
+        "lib/netstandard2.0/mas/ICU4N.resources.dll",
+        "lib/netstandard2.0/mer/ICU4N.resources.dll",
+        "lib/netstandard2.0/mfe/ICU4N.resources.dll",
+        "lib/netstandard2.0/mg/ICU4N.resources.dll",
+        "lib/netstandard2.0/mgh/ICU4N.resources.dll",
+        "lib/netstandard2.0/mgo/ICU4N.resources.dll",
+        "lib/netstandard2.0/mk/ICU4N.resources.dll",
+        "lib/netstandard2.0/ml/ICU4N.resources.dll",
+        "lib/netstandard2.0/mn/ICU4N.resources.dll",
+        "lib/netstandard2.0/mo/ICU4N.resources.dll",
+        "lib/netstandard2.0/mr/ICU4N.resources.dll",
+        "lib/netstandard2.0/ms/ICU4N.resources.dll",
+        "lib/netstandard2.0/mt/ICU4N.resources.dll",
+        "lib/netstandard2.0/mua/ICU4N.resources.dll",
+        "lib/netstandard2.0/my/ICU4N.resources.dll",
+        "lib/netstandard2.0/mzn/ICU4N.resources.dll",
+        "lib/netstandard2.0/naq/ICU4N.resources.dll",
+        "lib/netstandard2.0/nb/ICU4N.resources.dll",
+        "lib/netstandard2.0/nd/ICU4N.resources.dll",
+        "lib/netstandard2.0/nds/ICU4N.resources.dll",
+        "lib/netstandard2.0/ne/ICU4N.resources.dll",
+        "lib/netstandard2.0/nl/ICU4N.resources.dll",
+        "lib/netstandard2.0/nmg/ICU4N.resources.dll",
+        "lib/netstandard2.0/nn/ICU4N.resources.dll",
+        "lib/netstandard2.0/nnh/ICU4N.resources.dll",
+        "lib/netstandard2.0/no/ICU4N.resources.dll",
+        "lib/netstandard2.0/nus/ICU4N.resources.dll",
+        "lib/netstandard2.0/nyn/ICU4N.resources.dll",
+        "lib/netstandard2.0/om/ICU4N.resources.dll",
+        "lib/netstandard2.0/or/ICU4N.resources.dll",
+        "lib/netstandard2.0/os/ICU4N.resources.dll",
+        "lib/netstandard2.0/pa-Arab/ICU4N.resources.dll",
+        "lib/netstandard2.0/pa-Guru/ICU4N.resources.dll",
+        "lib/netstandard2.0/pa/ICU4N.resources.dll",
+        "lib/netstandard2.0/pl/ICU4N.resources.dll",
+        "lib/netstandard2.0/ps/ICU4N.resources.dll",
+        "lib/netstandard2.0/pt/ICU4N.resources.dll",
+        "lib/netstandard2.0/quz/ICU4N.resources.dll",
+        "lib/netstandard2.0/rm/ICU4N.resources.dll",
+        "lib/netstandard2.0/rn/ICU4N.resources.dll",
+        "lib/netstandard2.0/ro/ICU4N.resources.dll",
+        "lib/netstandard2.0/rof/ICU4N.resources.dll",
+        "lib/netstandard2.0/ru/ICU4N.resources.dll",
+        "lib/netstandard2.0/rw/ICU4N.resources.dll",
+        "lib/netstandard2.0/rwk/ICU4N.resources.dll",
+        "lib/netstandard2.0/sah/ICU4N.resources.dll",
+        "lib/netstandard2.0/saq/ICU4N.resources.dll",
+        "lib/netstandard2.0/sbp/ICU4N.resources.dll",
+        "lib/netstandard2.0/se/ICU4N.resources.dll",
+        "lib/netstandard2.0/seh/ICU4N.resources.dll",
+        "lib/netstandard2.0/ses/ICU4N.resources.dll",
+        "lib/netstandard2.0/sg/ICU4N.resources.dll",
+        "lib/netstandard2.0/sh/ICU4N.resources.dll",
+        "lib/netstandard2.0/shi-Latn/ICU4N.resources.dll",
+        "lib/netstandard2.0/shi-Tfng/ICU4N.resources.dll",
+        "lib/netstandard2.0/shi/ICU4N.resources.dll",
+        "lib/netstandard2.0/si/ICU4N.resources.dll",
+        "lib/netstandard2.0/sk/ICU4N.resources.dll",
+        "lib/netstandard2.0/sl/ICU4N.resources.dll",
+        "lib/netstandard2.0/smn/ICU4N.resources.dll",
+        "lib/netstandard2.0/sn/ICU4N.resources.dll",
+        "lib/netstandard2.0/so/ICU4N.resources.dll",
+        "lib/netstandard2.0/sq/ICU4N.resources.dll",
+        "lib/netstandard2.0/sr-Cyrl/ICU4N.resources.dll",
+        "lib/netstandard2.0/sr-Latn/ICU4N.resources.dll",
+        "lib/netstandard2.0/sr/ICU4N.resources.dll",
+        "lib/netstandard2.0/sv/ICU4N.resources.dll",
+        "lib/netstandard2.0/sw/ICU4N.resources.dll",
+        "lib/netstandard2.0/ta/ICU4N.resources.dll",
+        "lib/netstandard2.0/te/ICU4N.resources.dll",
+        "lib/netstandard2.0/teo/ICU4N.resources.dll",
+        "lib/netstandard2.0/tg/ICU4N.resources.dll",
+        "lib/netstandard2.0/th/ICU4N.resources.dll",
+        "lib/netstandard2.0/ti/ICU4N.resources.dll",
+        "lib/netstandard2.0/tl/ICU4N.resources.dll",
+        "lib/netstandard2.0/to/ICU4N.resources.dll",
+        "lib/netstandard2.0/tr/ICU4N.resources.dll",
+        "lib/netstandard2.0/tt/ICU4N.resources.dll",
+        "lib/netstandard2.0/twq/ICU4N.resources.dll",
+        "lib/netstandard2.0/tzm/ICU4N.resources.dll",
+        "lib/netstandard2.0/ug/ICU4N.resources.dll",
+        "lib/netstandard2.0/uk/ICU4N.resources.dll",
+        "lib/netstandard2.0/ur/ICU4N.resources.dll",
+        "lib/netstandard2.0/uz-Arab/ICU4N.resources.dll",
+        "lib/netstandard2.0/uz-Cyrl/ICU4N.resources.dll",
+        "lib/netstandard2.0/uz-Latn/ICU4N.resources.dll",
+        "lib/netstandard2.0/uz/ICU4N.resources.dll",
+        "lib/netstandard2.0/vai-Latn/ICU4N.resources.dll",
+        "lib/netstandard2.0/vai-Vaii/ICU4N.resources.dll",
+        "lib/netstandard2.0/vai/ICU4N.resources.dll",
+        "lib/netstandard2.0/vi/ICU4N.resources.dll",
+        "lib/netstandard2.0/vun/ICU4N.resources.dll",
+        "lib/netstandard2.0/wae/ICU4N.resources.dll",
+        "lib/netstandard2.0/wo/ICU4N.resources.dll",
+        "lib/netstandard2.0/xog/ICU4N.resources.dll",
+        "lib/netstandard2.0/yav/ICU4N.resources.dll",
+        "lib/netstandard2.0/yi/ICU4N.resources.dll",
+        "lib/netstandard2.0/yo/ICU4N.resources.dll",
+        "lib/netstandard2.0/zgh/ICU4N.resources.dll",
+        "lib/netstandard2.0/zh-Hans/ICU4N.resources.dll",
+        "lib/netstandard2.0/zh-Hant/ICU4N.resources.dll",
+        "lib/netstandard2.0/zh/ICU4N.resources.dll",
+        "lib/netstandard2.0/zu/ICU4N.resources.dll",
+        "readme.md",
+        "unicode-icon-128x128.jpg"
+      ]
+    },
+    "J2N/2.1.0": {
+      "sha512": "Vooz1wbnnqWuS+u93tADXK5Owxo8vLJhSrZ9Ac+KpgDF3GJq9TybXXTF1TFcWILgEtRThc8AOBENEzB0TQH1JA==",
+      "type": "package",
+      "path": "j2n/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "j2n-icon-100x100.png",
+        "j2n.2.1.0.nupkg.sha512",
+        "j2n.nuspec",
+        "lib/net40/J2N.dll",
+        "lib/net40/J2N.xml",
+        "lib/net45/J2N.dll",
+        "lib/net45/J2N.xml",
+        "lib/net462/J2N.dll",
+        "lib/net462/J2N.xml",
+        "lib/net6.0/J2N.dll",
+        "lib/net6.0/J2N.xml",
+        "lib/net8.0/J2N.dll",
+        "lib/net8.0/J2N.xml",
+        "lib/netstandard2.0/J2N.dll",
+        "lib/netstandard2.0/J2N.xml",
+        "lib/netstandard2.1/J2N.dll",
+        "lib/netstandard2.1/J2N.xml",
+        "readme.md"
       ]
     },
     "LangChain/0.17.0": {
@@ -3366,10 +4478,31 @@
         "version.txt"
       ]
     },
-    "Microsoft.Extensions.AI.Abstractions/9.4.3-preview.1.25230.7": {
-      "sha512": "iXTDPJZjJMBK+x10p32TE4WeSHjwn2spoL6c2t+MWkJiqSq2yRGQhxvnZZxlAAhA9KDRPMNvLQFrdj/KmfcgFg==",
+    "Microsoft.Extensions.AI/9.9.1": {
+      "sha512": "+f4ZpR2CcFzOGe/fliCmipfT4nTzbNZJkRiXVPC/Fr71MQ1BIZ3KhyAqSyzXsP+xEdqNQ3KFRadCuUELV2XzWg==",
       "type": "package",
-      "path": "microsoft.extensions.ai.abstractions/9.4.3-preview.1.25230.7",
+      "path": "microsoft.extensions.ai/9.9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "lib/net462/Microsoft.Extensions.AI.dll",
+        "lib/net462/Microsoft.Extensions.AI.xml",
+        "lib/net8.0/Microsoft.Extensions.AI.dll",
+        "lib/net8.0/Microsoft.Extensions.AI.xml",
+        "lib/net9.0/Microsoft.Extensions.AI.dll",
+        "lib/net9.0/Microsoft.Extensions.AI.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.AI.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.AI.xml",
+        "microsoft.extensions.ai.9.9.1.nupkg.sha512",
+        "microsoft.extensions.ai.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.AI.Abstractions/9.9.1": {
+      "sha512": "khnPyY46Yk2OTOY3z+hUsXxxl58RkMeSYxrWHr/eKYtM3Zp4UfY6Z7C75uMJTpt6l8eCJjoQ7tVj/R0Fmz/nPw==",
+      "type": "package",
+      "path": "microsoft.extensions.ai.abstractions/9.9.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3383,8 +4516,29 @@
         "lib/net9.0/Microsoft.Extensions.AI.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.AI.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.AI.Abstractions.xml",
-        "microsoft.extensions.ai.abstractions.9.4.3-preview.1.25230.7.nupkg.sha512",
+        "microsoft.extensions.ai.abstractions.9.9.1.nupkg.sha512",
         "microsoft.extensions.ai.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.AI.OpenAI/9.9.1-preview.1.25474.6": {
+      "sha512": "dnIY1VAAHkZRoZBmBkVqr7bvZgJ0JILnqIR4bGkElHboQNmqtq+ZBzu5lOsr1/J1/J/qecEi3l2dSuNZkrpjVA==",
+      "type": "package",
+      "path": "microsoft.extensions.ai.openai/9.9.1-preview.1.25474.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "lib/net462/Microsoft.Extensions.AI.OpenAI.dll",
+        "lib/net462/Microsoft.Extensions.AI.OpenAI.xml",
+        "lib/net8.0/Microsoft.Extensions.AI.OpenAI.dll",
+        "lib/net8.0/Microsoft.Extensions.AI.OpenAI.xml",
+        "lib/net9.0/Microsoft.Extensions.AI.OpenAI.dll",
+        "lib/net9.0/Microsoft.Extensions.AI.OpenAI.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.AI.OpenAI.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.AI.OpenAI.xml",
+        "microsoft.extensions.ai.openai.9.9.1-preview.1.25474.6.nupkg.sha512",
+        "microsoft.extensions.ai.openai.nuspec"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
@@ -3616,6 +4770,55 @@
         "tools/netcoreapp2.1/GetDocument.Insider.dll",
         "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json",
         "tools/netcoreapp2.1/System.Diagnostics.DiagnosticSource.dll"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
+      "sha512": "3KuSxeHoNYdxVYfg2IRZCThcrlJ1XJqIXkAWikCsbm5C/bCjv7G0WoKDyuR98Q+T607QT2Zl5GsbGRkENcV2yQ==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.abstractions/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Caching.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Memory/6.0.2": {
+      "sha512": "ANjkN9TiBZXm5cvj3bb3QbezBzqkupCzxwgNf46d4V4ToRBHcEp3IEgbc67M3ZqVHQxaJgEncZ/frdqznpVWIw==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.memory/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/net461/Microsoft.Extensions.Caching.Memory.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
+        "microsoft.extensions.caching.memory.6.0.2.nupkg.sha512",
+        "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.Configuration/9.0.4": {
@@ -4484,10 +5687,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.VectorData.Abstractions/9.0.0-preview.1.25229.1": {
-      "sha512": "HagzbnKODtfwnTJldgSlgdBp5UQXpRA7d4/Kx9wWdaYrk5DpHaC+5/v16ffU/zIYdTfPet4qTiES+pfQ6dzBMg==",
+    "Microsoft.Extensions.VectorData.Abstractions/9.7.0": {
+      "sha512": "Vth/omSCX2vR0JabzSRU/hdPhr0CvUVZlaS2lJPWHrEwvak8ntrQLDtLMtMiWKSvviGBe/WmjUW8gA3qqn9tjw==",
       "type": "package",
-      "path": "microsoft.extensions.vectordata.abstractions/9.0.0-preview.1.25229.1",
+      "path": "microsoft.extensions.vectordata.abstractions/9.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4500,7 +5703,7 @@
         "lib/net8.0/Microsoft.Extensions.VectorData.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.VectorData.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.VectorData.Abstractions.xml",
-        "microsoft.extensions.vectordata.abstractions.9.0.0-preview.1.25229.1.nupkg.sha512",
+        "microsoft.extensions.vectordata.abstractions.9.7.0.nupkg.sha512",
         "microsoft.extensions.vectordata.abstractions.nuspec",
         "neticon.png"
       ]
@@ -4665,10 +5868,27 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Abstractions/1.49.0": {
-      "sha512": "a1gUzzu/bYAV7YVaE8fen5663gFIpifiE4806s5ZDmS6PZQ4vOj/8lbvIoky6DqBwPl73EU2eUN7Y7Hicqb+OA==",
+    "Microsoft.SemanticKernel/1.66.0": {
+      "sha512": "pKj79wS1kHYqGtRek19iP5JDdg7PYuSVY+Dl2SxxBTiYiQrRtsGcX+TNuWeD63NepHxQCXtBRGzeqtavxdqniA==",
       "type": "package",
-      "path": "microsoft.semantickernel.abstractions/1.49.0",
+      "path": "microsoft.semantickernel/1.66.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NUGET.md",
+        "icon.png",
+        "lib/net8.0/Microsoft.SemanticKernel.dll",
+        "lib/net8.0/Microsoft.SemanticKernel.xml",
+        "lib/netstandard2.0/Microsoft.SemanticKernel.dll",
+        "lib/netstandard2.0/Microsoft.SemanticKernel.xml",
+        "microsoft.semantickernel.1.66.0.nupkg.sha512",
+        "microsoft.semantickernel.nuspec"
+      ]
+    },
+    "Microsoft.SemanticKernel.Abstractions/1.66.0": {
+      "sha512": "eWjGp4UCYMU+7q4P1NaU5Uq5xVt4cXbr6dMP17FtSJJvLzMFVVU9Ja1cAGyVMsjgfnEnf0lJLTr+s+XDoqFqdg==",
+      "type": "package",
+      "path": "microsoft.semantickernel.abstractions/1.66.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4678,14 +5898,31 @@
         "lib/net8.0/Microsoft.SemanticKernel.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Abstractions.xml",
-        "microsoft.semantickernel.abstractions.1.49.0.nupkg.sha512",
+        "microsoft.semantickernel.abstractions.1.66.0.nupkg.sha512",
         "microsoft.semantickernel.abstractions.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Connectors.OpenAI/1.49.0": {
-      "sha512": "jCkJ89rQd73QfOqGPFy13TaGH5KMPpf6BRWagDCkZILLUpnhN6siRqCXbqt0jtJ+7Z5kVIs0Sq1xHS1hSekcow==",
+    "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.66.0": {
+      "sha512": "5+HHkkhDhL3CP4vBBoHve2iebedFpVO/DR5hH5Exze35PNmrDT1hP67oVTpF2S3NQPYWx9I+PMdGFfr7b2VSwA==",
       "type": "package",
-      "path": "microsoft.semantickernel.connectors.openai/1.49.0",
+      "path": "microsoft.semantickernel.connectors.azureopenai/1.66.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NUGET.md",
+        "icon.png",
+        "lib/net8.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll",
+        "lib/net8.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.xml",
+        "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll",
+        "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.xml",
+        "microsoft.semantickernel.connectors.azureopenai.1.66.0.nupkg.sha512",
+        "microsoft.semantickernel.connectors.azureopenai.nuspec"
+      ]
+    },
+    "Microsoft.SemanticKernel.Connectors.OpenAI/1.66.0": {
+      "sha512": "jju5DWinn4Ig06aMzMly0FlXggFBxs6kwOloGhrPafwfp72QVfcqCa5i2EtsGe0I1IUvoRVzZiSpBwyV2fo6pQ==",
+      "type": "package",
+      "path": "microsoft.semantickernel.connectors.openai/1.66.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4695,14 +5932,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.Connectors.OpenAI.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.OpenAI.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.OpenAI.xml",
-        "microsoft.semantickernel.connectors.openai.1.49.0.nupkg.sha512",
+        "microsoft.semantickernel.connectors.openai.1.66.0.nupkg.sha512",
         "microsoft.semantickernel.connectors.openai.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Core/1.49.0": {
-      "sha512": "MOlL7ZfZlZAmerGZEfGc14Ach/Gt4vM17YdzXtP7511bfqtGHr9nZKaTq/xMVBCUre12GQr3Fyyp96JbtObgYw==",
+    "Microsoft.SemanticKernel.Core/1.66.0": {
+      "sha512": "D5q3UYs9IjyRGXHptrzXU8XwenIKvqYi3gPcuSU2yeIyD6LbFoOJJI+1U/7uVtVwPuaNne4IVuGbhkQvqrNcUg==",
       "type": "package",
-      "path": "microsoft.semantickernel.core/1.49.0",
+      "path": "microsoft.semantickernel.core/1.66.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4712,7 +5949,7 @@
         "lib/net8.0/Microsoft.SemanticKernel.Core.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Core.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Core.xml",
-        "microsoft.semantickernel.core.1.49.0.nupkg.sha512",
+        "microsoft.semantickernel.core.1.66.0.nupkg.sha512",
         "microsoft.semantickernel.core.nuspec"
       ]
     },
@@ -5134,6 +6371,20 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
+    "SemanticChunker.NET/1.0.1": {
+      "sha512": "qprYPFtVSue8Dpd3QhvZANnJ3nl+Jor2xHburvMloplSf6YRJMrePw/Q4YvX/6c17dbqqQOPML93MlH16SHnHA==",
+      "type": "package",
+      "path": "semanticchunker.net/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/PackageIcon.png",
+        "README.md",
+        "lib/net8.0/SemanticChunkerNET.dll",
+        "semanticchunker.net.1.0.1.nupkg.sha512",
+        "semanticchunker.net.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.6.2": {
       "sha512": "+NB4UYVYN6AhDSjW0IJAd1AGD8V33gemFNLPaxKTtPkHB+HaKAKf9MGAEUPivEWvqeQfcKIw8lJaHq6LHljRuw==",
       "type": "package",
@@ -5236,10 +6487,10 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-    "System.ClientModel/1.6.1": {
-      "sha512": "xcHHhDqB5MnOOY8yIn64Vzp6gtBEs6k5J1hluG04CrShSvQNXOx4PSDs7wJiXLDidlY/FZJmxJdKTKskyJwjvw==",
+    "System.ClientModel/1.7.0": {
+      "sha512": "NKKA3/O6B7PxmtIzOifExHdfoWthy3AD4EZ1JfzcZU8yGZTbYrK1qvXsHUL/1yQKKqWSKgIR1Ih/yf2gOaHc4w==",
       "type": "package",
-      "path": "system.clientmodel/1.6.1",
+      "path": "system.clientmodel/1.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5249,9 +6500,11 @@
         "analyzers/dotnet/cs/System.ClientModel.SourceGeneration.dll",
         "lib/net8.0/System.ClientModel.dll",
         "lib/net8.0/System.ClientModel.xml",
+        "lib/net9.0/System.ClientModel.dll",
+        "lib/net9.0/System.ClientModel.xml",
         "lib/netstandard2.0/System.ClientModel.dll",
         "lib/netstandard2.0/System.ClientModel.xml",
-        "system.clientmodel.1.6.1.nupkg.sha512",
+        "system.clientmodel.1.7.0.nupkg.sha512",
         "system.clientmodel.nuspec"
       ]
     },
@@ -6282,10 +7535,10 @@
         "system.net.primitives.nuspec"
       ]
     },
-    "System.Numerics.Tensors/9.0.4": {
-      "sha512": "ynVvqELpMWGQJ1Y90rlAmuTiSQIkXD0W5AMj7pVpEjECmrcIJLexIBblgccerHFijayfcsl1KCbkk+Sg5cS9vQ==",
+    "System.Numerics.Tensors/9.0.8": {
+      "sha512": "vnT3XBwytt8pYM25+lEHzR19F4GTkA9YA1E6wLOb55fiyY0wIaTVhlLrWAurvXcsgUdtNn0Ihw4qwWlsK6Wljg==",
       "type": "package",
-      "path": "system.numerics.tensors/9.0.4",
+      "path": "system.numerics.tensors/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6305,56 +7558,9 @@
         "lib/net9.0/System.Numerics.Tensors.xml",
         "lib/netstandard2.0/System.Numerics.Tensors.dll",
         "lib/netstandard2.0/System.Numerics.Tensors.xml",
-        "system.numerics.tensors.9.0.4.nupkg.sha512",
+        "system.numerics.tensors.9.0.8.nupkg.sha512",
         "system.numerics.tensors.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Numerics.Vectors/4.5.0": {
-      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
-      "type": "package",
-      "path": "system.numerics.vectors/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Numerics.Vectors.dll",
-        "lib/net46/System.Numerics.Vectors.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.Numerics.Vectors.dll",
-        "lib/netstandard1.0/System.Numerics.Vectors.xml",
-        "lib/netstandard2.0/System.Numerics.Vectors.dll",
-        "lib/netstandard2.0/System.Numerics.Vectors.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/System.Numerics.Vectors.dll",
-        "ref/net45/System.Numerics.Vectors.xml",
-        "ref/net46/System.Numerics.Vectors.dll",
-        "ref/net46/System.Numerics.Vectors.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.0/System.Numerics.Vectors.dll",
-        "ref/netstandard1.0/System.Numerics.Vectors.xml",
-        "ref/netstandard2.0/System.Numerics.Vectors.dll",
-        "ref/netstandard2.0/System.Numerics.Vectors.xml",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.numerics.vectors.4.5.0.nupkg.sha512",
-        "system.numerics.vectors.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.Reflection/4.3.0": {
@@ -7466,43 +8672,6 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "System.Threading.Tasks.Extensions/4.5.4": {
-      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
-      "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.Threading.Tasks.Extensions.dll",
-        "lib/net461/System.Threading.Tasks.Extensions.xml",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/netcoreapp2.1/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-        "system.threading.tasks.extensions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "Tiktoken/2.2.0": {
       "sha512": "zOwPjC2CHlN56cdwsMDaCehUXZ0K8cflVZaiXNvyTbyrKTeBVtpioaHRL8PsndruKfwG9vkbOdbz7MHI/DNyag==",
       "type": "package",
@@ -7642,34 +8811,38 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Build5Nines.SharpVector >= 2.1.1",
       "LangChain >= 0.17.0",
       "LangChain.Providers.OpenAI >= 0.17.0",
       "Microsoft.KernelMemory.AI.OpenAI >= 0.98.250508.3",
+      "Microsoft.SemanticKernel >= 1.66.0",
+      "Microsoft.SemanticKernel.Connectors.OpenAI >= 1.66.0",
       "OpenAI >= 2.5.0",
       "PdfPig >= 0.1.11",
       "Qdrant.Client >= 1.14.0",
+      "SemanticChunker.NET >= 1.0.1",
       "Swashbuckle.AspNetCore >= 6.6.2",
       "drittich.SemanticSlicer >= 1.4.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Users\\Offiahs\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\c#Projects\\RAG_LLM_INTEGRATION\\RAG_LLM_INTEGRATION.csproj",
+      "projectUniqueName": "C:\\Projects\\Research\\RAG_LLM_INTEGRATION\\RAG_LLM_INTEGRATION.csproj",
       "projectName": "RAG_LLM_INTEGRATION",
-      "projectPath": "C:\\c#Projects\\RAG_LLM_INTEGRATION\\RAG_LLM_INTEGRATION.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\c#Projects\\RAG_LLM_INTEGRATION\\obj\\",
+      "projectPath": "C:\\Projects\\Research\\RAG_LLM_INTEGRATION\\RAG_LLM_INTEGRATION.csproj",
+      "packagesPath": "C:\\Users\\Offiahs\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\Research\\RAG_LLM_INTEGRATION\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Offiahs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7697,12 +8870,16 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Build5Nines.SharpVector": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
           "LangChain": {
             "target": "Package",
             "version": "[0.17.0, )"
@@ -7715,6 +8892,14 @@
             "target": "Package",
             "version": "[0.98.250508.3, )"
           },
+          "Microsoft.SemanticKernel": {
+            "target": "Package",
+            "version": "[1.66.0, )"
+          },
+          "Microsoft.SemanticKernel.Connectors.OpenAI": {
+            "target": "Package",
+            "version": "[1.66.0, )"
+          },
           "OpenAI": {
             "target": "Package",
             "version": "[2.5.0, )"
@@ -7726,6 +8911,10 @@
           "Qdrant.Client": {
             "target": "Package",
             "version": "[1.14.0, )"
+          },
+          "SemanticChunker.NET": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -7755,20 +8944,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.SemanticKernel.Connectors.OpenAI 1.49.0 requires OpenAI (= 2.2.0-beta.4) but version OpenAI 2.5.0 was resolved.",
-      "libraryId": "OpenAI",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

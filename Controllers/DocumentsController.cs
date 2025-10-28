@@ -12,16 +12,17 @@ namespace RAG_LLM_INTEGRATION.Controllers
     {
         //private readonly ISearchService _searchService;
         private readonly ILangChainService _langChainService;
-
-        public DocumentsController(ILangChainService langChainService)
+        private readonly ISearchService _searchService;
+        public DocumentsController(ILangChainService langChainService, ISearchService searchService)
         {
             _langChainService = langChainService;
+            _searchService = searchService;
         }
 
         /// <summary>
         /// Upload a PDF, chunk it and return the chunks
         /// </summary>
-        [HttpPost("chunks")]
+        [HttpPost("GetChunks")]
         public async Task<IActionResult> GetDocument(IFormFile file)
         {
             if (file == null || file.Length == 0)
@@ -44,7 +45,7 @@ namespace RAG_LLM_INTEGRATION.Controllers
         /// Upload a PDF, chunk it, embed, and store in Qdrant
         /// </summary>
         [HttpPost("upload")]
-        public async Task<IActionResult> UploadDocument(IFormFile file)
+        public async Task<IActionResult> UploadDocument(IFormFile file, string collectionName)
         {
             if (file == null || file.Length == 0)
             {
@@ -53,7 +54,7 @@ namespace RAG_LLM_INTEGRATION.Controllers
 
             try
             {
-                bool res = await _langChainService.ChunkDocument(file);
+                bool res = await _langChainService.ChunkDocumentAndCreateEmbeddings(file, collectionName);
                 if (!res)
                     return StatusCode(500, new { message = "Failed to process and store embeddings" });
                 return Ok(new { message = "File processed and embeddings stored successfully" });
@@ -64,5 +65,21 @@ namespace RAG_LLM_INTEGRATION.Controllers
             }
         }
 
+        /// <summary>
+        /// Creates a , chunk it, embed, and store in Qdrant
+        /// </summary>
+        [HttpPost("CreateAndUploadCollection")]
+        public async Task<IActionResult> UploadEmbeddings([FromBody] EmbeddingRequest request)
+        {
+            if (string.IsNullOrWhiteSpace(request.CollectionName) || request.Entries == null || !request.Entries.Any())
+                return BadRequest("Collection name and entries are required.");
+
+            var (result, response) = await _searchService.CreateEmbedingsForCollection(request.CollectionName, request.Entries);
+
+            if (result)
+                return Ok("Embeddings uploaded successfully.");
+            else
+                return StatusCode(500, $"Something went wrong: {response}");
+        }
     }
 }

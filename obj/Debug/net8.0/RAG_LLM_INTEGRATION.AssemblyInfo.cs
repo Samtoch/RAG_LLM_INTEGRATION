@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RAG_LLM_INTEGRATION")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1376cc579c292b200f165e329674560370e80afb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e29ec03f6da3dd6b664412db5836b75a01de9a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("RAG_LLM_INTEGRATION")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RAG_LLM_INTEGRATION")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
