@@ -34,13 +34,13 @@ This is a .Net 8 API Project of RAG implementation using Qdrant database, OpenAI
 - Configure the Qdrant client in your .Net project with your API key and endpoint URL.
 - Test the connection to Qdrant to ensure it's working correctly.
 
-- ### OpenAI Setup
+### OpenAI Setup
 - Sign up for an OpenAI account and obtain your API key.
 - Install OpenAI client library for .Net.
 - Configure the OpenAI client in your .Net project with your API key.
 - Test the connection to OpenAI to ensure it's working correctly.
 
-- ### Project Setup
+### Project Setup
 - Fork or clone this repository.
 - Clone the repository
 - Navigate to the project directory

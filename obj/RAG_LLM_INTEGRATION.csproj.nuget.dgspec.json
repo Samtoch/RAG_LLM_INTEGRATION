@@ -75,6 +75,10 @@
               "target": "Package",
               "version": "[1.66.0, )"
             },
+            "NLog": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
             "OpenAI": {
               "target": "Package",
               "version": "[2.5.0, )"

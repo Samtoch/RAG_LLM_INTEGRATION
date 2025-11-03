@@ -2229,6 +2229,19 @@
           }
         }
       },
+      "NLog/6.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Ollama/1.12.1-dev.1": {
         "type": "package",
         "dependencies": {
@@ -5983,6 +5996,28 @@
         "packageIcon.png"
       ]
     },
+    "NLog/6.0.5": {
+      "sha512": "Gq/L18qnZhIfrfqXtUBKdDMtT8cZB+974C99H+w6DxdlIcT4wYCCGjRgnUij3spUH1HWScF6JRaCyv11CHZJ6g==",
+      "type": "package",
+      "path": "nlog/6.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/netstandard2.1/NLog.dll",
+        "lib/netstandard2.1/NLog.xml",
+        "nlog.6.0.5.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
     "Ollama/1.12.1-dev.1": {
       "sha512": "PMwkM32A+Iq5NHTnatO2AkZDilPpZshQolWxkQQpZUVhixF3YLuJJxlErQ3U408VobvvX2gmZVbzzBEmyPfzgA==",
       "type": "package",
@@ -8817,6 +8852,7 @@
       "Microsoft.KernelMemory.AI.OpenAI >= 0.98.250508.3",
       "Microsoft.SemanticKernel >= 1.66.0",
       "Microsoft.SemanticKernel.Connectors.OpenAI >= 1.66.0",
+      "NLog >= 6.0.5",
       "OpenAI >= 2.5.0",
       "PdfPig >= 0.1.11",
       "Qdrant.Client >= 1.14.0",
@@ -8899,6 +8935,10 @@
           "Microsoft.SemanticKernel.Connectors.OpenAI": {
             "target": "Package",
             "version": "[1.66.0, )"
+          },
+          "NLog": {
+            "target": "Package",
+            "version": "[6.0.5, )"
           },
           "OpenAI": {
             "target": "Package",

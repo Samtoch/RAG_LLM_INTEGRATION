@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using System.Text.Json;
 using System.Text;
+using NLog;
 
 namespace RAG_LLM_INTEGRATION.Services
 {
@@ -10,6 +11,7 @@ namespace RAG_LLM_INTEGRATION.Services
         private readonly IConfiguration _configuration;
         private string? _qdrantUrl;
         private string? _qdrantKey;
+        private static Logger log = LogManager.GetCurrentClassLogger();
 
         public QdrantService(IConfiguration configuration)
         {
@@ -42,16 +44,16 @@ namespace RAG_LLM_INTEGRATION.Services
                 if (!response.IsSuccessStatusCode)
                 {
                     string errorContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Error Response: {errorContent}");
+                    log.Error($"Error Response: {errorContent}");
                     return (false, $"Failed to create collection: {errorContent}");
                 }
 
-                Console.WriteLine($"Collection Created: {response.StatusCode}");
+                log.Info($"Collection Created: {response.StatusCode}");
                 return (true, $"Collection '{collectionName}' created successfully.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Collection Creation Failed: {ex.Message}");
+                log.Error($"Collection Creation Failed: {ex.Message}");
                 return (false, $"Exception: {ex.Message}");
             }
         }
@@ -82,19 +84,19 @@ namespace RAG_LLM_INTEGRATION.Services
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 var response = await client.PutAsync($"{_qdrantUrl}/collections/{collectionName}/points", content);
-                Console.WriteLine($"Uploaded {name}: {response.IsSuccessStatusCode}");
+                log.Info($"Uploaded {name}: {response.IsSuccessStatusCode}");
 
                 if (!response.IsSuccessStatusCode)
                 {
                     string errorContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Error Response: {errorContent}");
+                    log.Error($"Error Response: {errorContent}");
                     return (false, $"Failed to create points: {errorContent}");
                 }
                 return (true, $"Points '{collectionName}' created successfully.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Vector Points Upload Failed: {ex.Message}");
+                log.Error($"Vector Points Upload Failed: {ex.Message}");
                 return (false, $"Exception: {ex.Message}");
             }
         }
@@ -124,6 +126,7 @@ namespace RAG_LLM_INTEGRATION.Services
             }
             catch (Exception ex)
             {
+                log.Error($"Collection Existence Check Failed: {ex.Message}");
                 return (false, $"Exception while checking collection: {ex.Message}");
             }
         }
@@ -156,7 +159,7 @@ namespace RAG_LLM_INTEGRATION.Services
                 }
             }
 
-            Console.WriteLine("Failed to get embeddings.");
+            log.Error("Failed to get embeddings.");
             return null;
         }
 
