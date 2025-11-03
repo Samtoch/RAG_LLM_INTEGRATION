@@ -16,8 +16,8 @@ This is a .Net 8 API Project of RAG implementation using Qdrant database, OpenAI
 ## Prerequisites
 - .Net 8 SDK
 - Ollama installed and running locally OR access to OpenAI services
-- OpenAI API Key (if using OpenAI services)
-- Qdrant API Key (if using Qdrant services)
+- OpenAI API Key (if using OpenAI API)
+- Qdrant API Key
 - Visual Studio or any other IDE for .Net development
 - Postman or any other API testing tool
 - Git
@@ -25,6 +25,22 @@ This is a .Net 8 API Project of RAG implementation using Qdrant database, OpenAI
 - NLog (for logging)
 
 ## Getting Started
+### Qdrant Setup
+- Follow the Qdrant documentation to set up a Qdrant instance.
+- Create a collection in Qdrant to store your embeddings.
+- Obtain your Qdrant API key and endpoint URL.
+- Install Qdrant client library for .Net.
+- Configure the Qdrant client in your .Net project with your API key and endpoint URL.
+- Test the connection to Qdrant to ensure it's working correctly.
+
+- ### OpenAI Setup
+- Sign up for an OpenAI account and obtain your API key.
+- Install OpenAI client library for .Net.
+- Configure the OpenAI client in your .Net project with your API key.
+- Test the connection to OpenAI to ensure it's working correctly.
+
+- ### Project Setup
+- Fork or clone this repository.
 - Clone the repository
 - Navigate to the project directory
 - Restore the NuGet packages
