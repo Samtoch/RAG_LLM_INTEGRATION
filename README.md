@@ -1,5 +1,17 @@
 # Semantic Search
-This is a .Net 8 API Project with integration to LLM. It contains integration with all-minilm model in Ollama locally hosted
+This is a .Net 8 API Project of RAG implementation using Qdrant database, OpenAI APIs and Embedding Models. 
+- Qdrant is used as the vector database to store and retrieve embeddings.
+- OpenAI APIs are used to generate embeddings and perform semantic search.
+- NLog is used for logging.
+- Swagger is used for API documentation.
+- The project is structured to follow best practices for .Net API development.
+- The project includes error handling and logging for better maintainability.
+- The project is designed to be scalable and can handle large volumes of data.
+- The project is documented with clear instructions on how to set up and use the API.
+- The project includes a Postman collection for easy testing of the API endpoints.
+- The project supports both Ollama (local LLM) and OpenAI services for flexibility.
+- The project includes a modular architecture to allow easy integration of additional services in the future.
+- The project is open source and contributions are welcome.
 
 ## Prerequisites
 - .Net 8 SDK
