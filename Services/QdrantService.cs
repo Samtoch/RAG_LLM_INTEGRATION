@@ -63,6 +63,8 @@ namespace RAG_LLM_INTEGRATION.Services
         {
             try
             {
+                log.Info($"Uploading Vector: {name} to Collection: {collectionName}");
+
                 using HttpClient client = new HttpClient();
                 client.Timeout = TimeSpan.FromMinutes(5);
 
