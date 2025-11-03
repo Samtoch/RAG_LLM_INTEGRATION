@@ -26,6 +26,7 @@ This is a .Net 8 API Project of RAG implementation using Qdrant database, OpenAI
 
 ## Getting Started
 ### Qdrant Setup
+- Sign up to https://login.cloud.qdrant.io/ and create an account.
 - Follow the Qdrant documentation to set up a Qdrant instance.
 - Create a collection in Qdrant to store your embeddings.
 - Obtain your Qdrant API key and endpoint URL.
