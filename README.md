@@ -1,4 +1,4 @@
-# Semantic Search
+# LLM Optimization with RAG using Qdrant and OpenAI in .Net 8 API
 This is a .Net 8 API Project of RAG implementation using Qdrant database, OpenAI APIs and Embedding Models. 
 - Qdrant is used as the vector database to store and retrieve embeddings.
 - OpenAI APIs are used to generate embeddings and perform semantic search.
